@@ -1,0 +1,130 @@
+/* Resetowanie stylów */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stylizacja body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('podstrony/image/tło.png'); /* Dodaj ścieżkę do pliku PNG */
+  background-size: cover; /* Dopasuj rozmiar tła do okna przeglądarki */
+  background-position: center; /* Wyśrodkuj tło */
+}
+}
+
+/* Stylizacja menu */
+.footer-menu {
+  background-color: #333; /* Kolor tła menu */
+  overflow: hidden; /* Ukrycie zawartości, która wychodzi poza kontener */
+}
+
+.footer-menu ul {
+  list-style-type: none; /* Usunięcie domyślnego stylu punktorów */
+  margin: 0; /* Reset marginesu */
+  padding: 0; /* Reset odstępów */
+}
+
+.footer-menu ul li {
+  float: left; /* Wyrównanie elementów obok siebie */
+}
+
+.footer-menu ul li a {
+  display: block;
+  color: white; /* Kolor tekstu */
+  text-align: center;
+  padding: 20px 30px; /* Odstępy wewnętrzne: góra/dół, lewo/prawo */
+  text-decoration: none; /* Usunięcie podkreślenia */
+  font-size: 20px; /* Rozmiar czcionki */
+}
+
+/* Efekt po najechaniu myszką */
+.footer-menu ul li a:hover {
+  background-color: #555; /* Kolor tła po najechaniu */
+}
+
+/* Stylizacja kontenera sekcji */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Stylizacja sekcji */
+.section {
+  width: calc(50% - 20px);
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Stylizacja obrazków */
+.image {
+  position: relative;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image:hover img {
+  transform: scale(1.05);
+}
+
+.image.zoomed img {
+  transform: scale(2);
+}
+
+/* Stylizacja opisu */
+.description {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Stylizacja przycisku */
+.more-info-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.order-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.more-info-btn:hover {
+  background-color: #0056b3; /* Ciemniejszy odcień niebieskiego */
+}
+
+/* Stylizacja stopki */
+footer {
+  background-color: #f8f9fa; /* Szary */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Stylizacja dla smartfonów */
+@media screen and (max-width: 768px) {
+  .section {
+    width: 100%; /* Na mniejszych ekranach, sekcje zajmują 100% szerokości */
+  }
+}
